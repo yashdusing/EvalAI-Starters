@@ -1,2 +1,11 @@
-name: A workflow for testing challenge configration files on every push
+name: EvalAI challenge testing workflow
 on: push
+jobs:
+    build:
+      name: Hello world action
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v1
+        - uses: ./.github/test-challenge-config
+          with:
+            MY_NAME: "Yash Dusing"
