@@ -5,4 +5,4 @@ FROM python:3
 COPY . /code
 
 #CMD ["python", "code/tests/hello_world.py"]
-CMD ["ls"]
+CMD ["python", "tests/hello_world.py"]
