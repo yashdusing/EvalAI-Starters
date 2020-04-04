@@ -1,8 +1,8 @@
 name: EvalAI challenge testing workflow
 on: push
 jobs:
-    build:
-      name: Hello world action
+    test:
+      name: Test challenge configuration
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v1
