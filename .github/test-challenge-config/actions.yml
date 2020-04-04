@@ -1,0 +1,17 @@
+name: "EvalAIchallenge congiurations test"
+description: "Test your EvalAI challenge configuration files through a CD pipeline to activate live reloads on challenges !"
+author: "yashdusing145@github.com"
+
+inputs:
+  MY_NAME:
+    description: "Who to greet"
+    required: true
+    default: "World"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "mic"
+  color: "purple"

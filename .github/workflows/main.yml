@@ -1,0 +1,2 @@
+name: A workflow for testing challenge configration files on every push
+on: push
